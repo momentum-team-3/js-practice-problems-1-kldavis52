@@ -1,4 +1,7 @@
+<!DOCTYPE html>
+
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>Mocha Tests</title>
@@ -7,6 +10,7 @@
   <script src="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.1.2/chai.js"></script>
 </head>
+
 <body>
 
   <div id="mocha">
@@ -17,16 +21,17 @@
 
 
   <script>mocha.setup({
-    ui: 'bdd',
-    bail: true
-  })</script>
+      ui: 'bdd',
+      bail: true
+    })</script>
   <script src="tests.js"></script>
   <script src="homework.js"></script>
-  
+
   <script>
     mocha.checkLeaks();
     mocha.run();
   </script>
 
 </body>
+
 </html>
